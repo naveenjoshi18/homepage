@@ -1,0 +1,29 @@
+
+<div class="bgcontainer">
+        <div class="button">
+            <a href="http://localhost:4200/ask" class="btn btn-primary" role="button">Ask Question</a>
+        </div>
+        <h2 class="title">Top Questions</h2>
+        <hr>
+        <div *ngFor="let items of fakepost" (click)="loadque(items)">
+            <div class="btn btn-group" >
+                <pre style="font-size:20px;">   {{views}}  </pre>
+                <pre style="font-size:20px;">  {{votes}}  </pre>
+                <pre style="font-size:20px;">   {{answers}}  </pre>
+                <h5 class="text-primary">{{items.title}} Title</h5>
+            </div><br>
+            <div class="btn btn-group" style="margin-top: -40px; margin-bottom: -10px;">
+                <pre>   <b>Views</b></pre>
+                <pre>  <b>Votes</b></pre>
+                <pre>  <b>Answers</b></pre>
+                <div class="tags">
+                    <span class="badge badge-dark p-1 ml-1"
+                    *ngFor="let item of items.tag let i=index">{{items.tag[i]}}
+                    </span>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <p>{{today | date : 'medium'}}</p>
+    
+</div>

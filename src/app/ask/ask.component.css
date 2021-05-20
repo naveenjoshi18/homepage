@@ -1,0 +1,27 @@
+
+.bgcontainer{
+    background-color: white;
+   margin-left: 10% ;
+   margin-right: 15%;
+}
+
+.question{
+    margin: 0% 5%;
+    padding: 3% 0%;
+    text-align: justify;
+    color: blueviolet;
+    background-color: white;
+}
+
+.description{
+    padding: 2% 5%;
+    color: black;
+
+}
+
+
+.answer{
+    padding: 2% 5%;
+    color: black;
+
+}

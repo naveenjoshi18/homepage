@@ -1,0 +1,35 @@
+.bgcontainer{
+    background-color: white;
+   margin-left: 10% ;
+   margin-right: 15%;
+  
+}
+
+.title{
+    padding: 2% 5%;
+    color: blueviolet;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.button{
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 1%;
+   
+}
+
+ul{
+    list-style-type: none;
+}
+pre{
+    color:rgba(5, 3, 3, 0.623);
+  
+   }
+.text-primary{
+    padding-left: 30px;
+}
+
+.tags{
+    margin-left: 35px;
+}

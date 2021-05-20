@@ -1,0 +1,71 @@
+<div class="container border shadow">
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/user' (click)='onUpdate()'><b>Profile</b> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/user/editProfile'><b>Edit Profile</b> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+<div class="container p-3 my-3 ">
+    <div class="row my-3">
+
+        <div class="col-md-2">
+            <img src="https://lh3.googleusercontent.com/proxy/lx-XGvyNWGfOnZvZote18fOASdtLSLOiVjytiGDHL02vWat4dbftWR1R5GX2_s-YUC8j0pofTGtwRMdsU8qSIgcXLBIOaBO97VN1Iw1yQ5tVKoZtqQ7t7gp1f1rHcVpX-kOlMZKSmokJPA"
+                width="130px" height="130px">
+        </div>
+
+        <div class="col-md-2">
+            <ul style="list-style-type: none;">
+                <li style="text-transform: capitalize; font-weight: 800; font-size: 20px;"> {{userName}}</li>
+                <li> ({{title}})</li><br>
+                <li> {{about}}</li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul style="list-style-type: none; font-size: 21px;">
+                <li><i class='fas fa-location-arrow' style='font-size:15px'></i> {{location}}</li>
+                <li><i class='fab fa-twitter-square' style='font-size:15px'></i> {{twitter}}</li>
+                <li><i class='fab fa-facebook-square' style='font-size:15px'></i> {{facebook}}</li>
+                <li><i class='fab fa-github' style='font-size:15px'></i> {{github}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="container border shadow" id="container">
+    <router-outlet></router-outlet>
+</div>
+<hr>
+<div class="container my-5 p-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>Get some information about covid-19
+            </h4>
+            <button class="btn btn-primary" style="border-radius: 20px;"><a
+                    href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="a1" target="_blank"
+                    rel="noopener noreferre">Latest covid-19 Info</a></button>
+        </div>
+        <div class="col-sm-6">
+            <h4>Donate for Covid-relief</h4>
+            <button class="btn btn-primary" style="border-radius: 20px;"><a
+                    href="https://www.ketto.org/crowdfunding/fundraisers?utm_source=external_Ketto&utm_medium=google-search&utm_campaign=S14_1001_SALE_BrandVariation_KY_ALL_CLK_IND&utm_term=b_%2Bketto%20%2Bdonate&utm_content=homepage_resp_ad1&utm_placement=KT05_AG_1865_BrandSeed_Donation&gclid=Cj0KCQjw4v2EBhCtARIsACan3nxKfmjQxrrDuFRjgYTTQKdciTllj-bLFBvZufPRcY2jreH6YyewiqEaAjLvEALw_wcB"
+                    id="a1" target="_blank" rel="noopener noreferre">Donate here</a></button>
+        </div>
+    </div>
+    <hr>
+</div>

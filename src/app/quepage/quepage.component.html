@@ -1,0 +1,23 @@
+<div class="bgcontainer" *ngFor="let data of iddata">
+    <div class="button">
+        <a href="http://localhost:4200/ask" class="btn btn-primary" role="button">Ask Question</a>
+    </div>
+    
+    <div class="question">
+        <h2>{{data.title}} </h2>
+    </div>
+    <div class="description">
+        <p> {{data.body}}</p>
+            <h6> Related to <span class="badge badge-secondary p-1 m-1" *ngFor="let item of data.tag let i=index">{{data.tag[i].item_text}}</span></h6>    
+    </div>
+    <form>
+        <div class="answer">
+            <h6>Your Answer</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" required #answer='ngModel' name="answer" id="answer" placeholder="Type Here..."
+             ngModel rows="7"></textarea>
+             
+            <button class="btn btn-primary pt-2 mt-3" (click)="addans(answer.value)">Submit</button>
+        </div>
+    </form>
+    
+</div>
